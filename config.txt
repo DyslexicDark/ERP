@@ -1,0 +1,4 @@
+servidorip:localhost;
+puerto:5432;
+terminal:ts;
+nombre:Server1;

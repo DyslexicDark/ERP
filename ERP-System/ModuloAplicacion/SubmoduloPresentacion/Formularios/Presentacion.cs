@@ -39,7 +39,7 @@ namespace ModuloAplicacion.SubmoduloPresentacion.Formularios
         //nombre del usuario que inicia sesion
         public static string xNombreUsuarioSesion = "";
         //nombre asignado al sistema
-        public static string xNombreSistema = "Ofercom";
+        public static string xNombreSistema = "OFERCOM";
         //nombre del super-usuario
         public static string xNombreSuperUsuario = "admin";
         //contraseña del super-usuario

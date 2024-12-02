@@ -19,6 +19,7 @@ namespace ModuloAplicacion.SubmoduloConfiguracionInicial.Formularios
             InitializeComponent();
         }
         /*...............Variables y constantes......................*/
+        int xContador = 0;
         /*...............Eventos.....................................*/
         private void ConfiguracionInicial_Load(object sender, EventArgs e)
         {
@@ -47,13 +48,14 @@ namespace ModuloAplicacion.SubmoduloConfiguracionInicial.Formularios
                             }
                             try
                             {
-                                crearArchivoConfiguracionInicial(this.textBox3.Text.Trim(), Convert.ToInt32(this.textBox2.Text.Trim()), xTipo, this.textBox1.Text.Trim());
+                                crearArchivoConfiguracionInicial(this.textBox1.Text.Trim(), Convert.ToInt32(this.textBox3.Text.Trim()), xTipo, this.textBox2.Text.Trim());
                                 if (File.Exists(ModuloAplicacion.SubmoduloPresentacion.Formularios.Presentacion.xPath.Trim() + ModuloAplicacion.SubmoduloPresentacion.Formularios.Presentacion.xNombreArchivoConfiguracion.Trim()) == true)
                                 {
                                     MessageBox.Show(ModuloAplicacion.SubmoduloConfiguracionInicial.Accesorios.Errores.cuerpoMensajesErrores("ci6"), ModuloAplicacion.SubmoduloConfiguracionInicial.Accesorios.Errores.cabeceraMensajesErrores());
                                     this.button6.Enabled = true;
                                     this.button6.Focus();
-                                    DB();
+                                    this.button5.Enabled = false;
+                                    seteoTimer();
                                 }
                                 else
                                 {
@@ -106,7 +108,35 @@ namespace ModuloAplicacion.SubmoduloConfiguracionInicial.Formularios
         {
             Application.Exit();
         }
+        private void timer1_Tick(object sender, EventArgs e)
+        {
+            if (xContador==1)
+            {
+                instaladorDB();
+                cargaBarra();
+            }
+            if (xContador==2)
+            {
+                this.timer1.Stop();
+                this.timer1.Dispose();
+                MessageBox.Show("Final de los procesos...");
+                this.button5.Enabled = true;
+            }
+            xContador++;
+        }
         /*...............Funciones...................................*/
+        private void cargaBarra()
+        {
+            this.progressBar1.Minimum = 0;
+            this.progressBar1.Maximum = 1;
+            this.progressBar1.Step = 1;
+            this.progressBar1.PerformStep();
+        }
+        private void seteoTimer()
+        {
+            this.timer1.Interval = 3000;
+            this.timer1.Enabled = true;
+        }
         public void crearArchivoConfiguracionInicial(string xCodigoIp, int xNumeroPuerto, string xTipoTerminal, string xNombreTerminal)
         {
             StreamWriter sw = new StreamWriter(ModuloAplicacion.SubmoduloPresentacion.Formularios.Presentacion.xPath.Trim() + ModuloAplicacion.SubmoduloPresentacion.Formularios.Presentacion.xNombreArchivoConfiguracion.Trim());
@@ -124,9 +154,30 @@ namespace ModuloAplicacion.SubmoduloConfiguracionInicial.Formularios
             ModuloAplicacion.SubmoduloPresentacion.Formularios.Presentacion.xNombreTerminal = xNombreTerminal;
             sw.Close();
         }
-        private void DB()
+        /******************************************************************************/
+        private void instaladorDB()
         {
-
+            string xRespuesta = ModuloAplicacion.SubmoduloDB.AccesoDatos.AccesoDB.instaladorBaseDB();
+            if(xRespuesta == "si")
+            {
+                //La base fue creada correctamente
+                this.listBox1.Items.Insert(0,"Base DB OFERCOM...................ok");
+            }
+            else if (xRespuesta == "no")
+            {
+                //La base no fue creada, no conocemos el error
+                this.listBox1.Items.Insert(0, "Base DB OFERCOM...................fallo");
+            }
+            else if (xRespuesta == "")
+            {
+                //Controlamos el error del primer try/catch
+                this.listBox1.Items.Insert(0, "Base DB OFERCOM...................fallo");
+            }
+            else if (xRespuesta == "")
+            {
+                //Controlamos el error del segundo try/catch
+                this.listBox1.Items.Insert(0, "Base DB OFERCOM...................fallo");
+            }
         }
     }
 }

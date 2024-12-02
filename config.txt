@@ -1,4 +1,4 @@
-servidorip:localhost;
+servidorip:Server1;
 puerto:5432;
 terminal:ts;
-nombre:Server1;
+nombre:localhost;

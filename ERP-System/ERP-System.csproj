@@ -49,6 +49,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="ModuloAplicacion\SubmoduloDB\AccesoDatos\AccesoDB.cs" />
     <Compile Include="ModuloAplicacion\SubmoduloAccesoSistema\Accesorios\Errores.cs" />
     <Compile Include="ModuloAplicacion\SubmoduloAccesoSistema\Formularios\AccesoSistema.cs">
       <SubType>Form</SubType>
@@ -69,6 +70,7 @@
     <Compile Include="ModuloAplicacion\SubmoduloControlConexion\Formulario\ControlConexion.Designer.cs">
       <DependentUpon>ControlConexion.cs</DependentUpon>
     </Compile>
+    <Compile Include="ModuloAplicacion\SubmoduloDB\AccesoDatos\Conexiones.cs" />
     <Compile Include="ModuloAplicacion\SubmoduloMenuPrincipal\Formularios\MenuPrincipal.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -123,6 +125,25 @@
   <ItemGroup>
     <WCFMetadata Include="Connected Services\" />
   </ItemGroup>
-  <ItemGroup />
+  <ItemGroup>
+    <Folder Include="ModuloAplicacion\ModuloCompras\SubmoduloCompras\" />
+    <Folder Include="ModuloAplicacion\ModuloCompras\SubmoduloProveedores\" />
+    <Folder Include="ModuloAplicacion\ModuloCompras\SubmoduloReportesCompras\" />
+    <Folder Include="ModuloAplicacion\ModuloConfiguracion\SubmoduloBackup\" />
+    <Folder Include="ModuloAplicacion\ModuloConfiguracion\SubmoduloConfiguracionGeneral\" />
+    <Folder Include="ModuloAplicacion\ModuloMarketing\SubmoduloEstadisticas\" />
+    <Folder Include="ModuloAplicacion\ModuloMarketing\SubmoduloEstrategias\" />
+    <Folder Include="ModuloAplicacion\ModuloProductos\SubmoduloCategorias\" />
+    <Folder Include="ModuloAplicacion\ModuloProductos\SubmoduloInventarios\" />
+    <Folder Include="ModuloAplicacion\ModuloProductos\SubmoduloProductos\" />
+    <Folder Include="ModuloAplicacion\ModuloRH\SubmoduloAsistencia\" />
+    <Folder Include="ModuloAplicacion\ModuloRH\SubmoduloEmpleados\" />
+    <Folder Include="ModuloAplicacion\ModuloRH\SubmoduloNomina\" />
+    <Folder Include="ModuloAplicacion\ModuloUsuarios\SubmoduloPermisos\" />
+    <Folder Include="ModuloAplicacion\ModuloUsuarios\SubmoduloUsuarios\" />
+    <Folder Include="ModuloAplicacion\ModuloVentas\SubmoduloClientes\" />
+    <Folder Include="ModuloAplicacion\ModuloVentas\SubmoduloReportesVentas\" />
+    <Folder Include="ModuloAplicacion\ModuloVentas\SubmoduloVentas\" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

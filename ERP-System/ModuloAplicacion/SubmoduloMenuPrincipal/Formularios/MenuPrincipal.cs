@@ -33,11 +33,39 @@ namespace ModuloAplicacion.SubmoduloMenuPrincipal.Formularios
             this.Text = ModuloAplicacion.SubmoduloPresentacion.Formularios.Presentacion.xNombreSistema.Trim();
             this.toolStripStatusLabel1.Text = "MenuPrincipal.cs" + " | " + "Usuario: " + ModuloAplicacion.SubmoduloPresentacion.Formularios.Presentacion.xNombreUsuarioSesion.Trim() + " - Fecha: " + DateTime.Now.Day + "/" + DateTime.Now.Month + "/" + DateTime.Now.Year;
         }
-
         private void button1_Click(object sender, EventArgs e)
+        {
+            ModuloAplicacion.SubmoduloDB.Formularios.Productos formRH = new ModuloAplicacion.SubmoduloDB.Formularios.Productos();
+            formRH.ShowDialog();
+        }
+        private void button2_Click(object sender, EventArgs e)
+        {
+            ModuloAplicacion.SubmoduloDB.Formularios.Ventas formRH = new ModuloAplicacion.SubmoduloDB.Formularios.Ventas();
+            formRH.ShowDialog();
+        }
+        private void button3_Click(object sender, EventArgs e)
+        {
+            ModuloAplicacion.SubmoduloDB.Formularios.Compras formRH = new ModuloAplicacion.SubmoduloDB.Formularios.Compras();
+            formRH.ShowDialog();
+        }
+        private void button4_Click(object sender, EventArgs e)
         {
             ModuloAplicacion.SubmoduloDB.Formularios.RH formRH = new ModuloAplicacion.SubmoduloDB.Formularios.RH();
             formRH.ShowDialog();
+        }
+        private void button5_Click(object sender, EventArgs e)
+        {
+            ModuloAplicacion.SubmoduloDB.Formularios.Marketing formRH = new ModuloAplicacion.SubmoduloDB.Formularios.Marketing();
+            formRH.ShowDialog();
+        }
+        private void button6_Click(object sender, EventArgs e)
+        {
+            ModuloAplicacion.SubmoduloDB.Formularios.Configuracion formRH = new ModuloAplicacion.SubmoduloDB.Formularios.Configuracion();
+            formRH.ShowDialog();
+        }
+        private void button7_Click(object sender, EventArgs e)
+        {
+            Application.Exit();
         }
         /*..................Funciones...............................*/
     }

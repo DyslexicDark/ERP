@@ -31,7 +31,13 @@ namespace ModuloAplicacion.SubmoduloMenuPrincipal.Formularios
         private void MenuPrincipal_Load(object sender, EventArgs e)
         {
             this.Text = ModuloAplicacion.SubmoduloPresentacion.Formularios.Presentacion.xNombreSistema.Trim();
-            this.toolStripStatusLabel1.Text = "Usuario: " + ModuloAplicacion.SubmoduloPresentacion.Formularios.Presentacion.xNombreUsuarioSesion.Trim() + " - Fecha: " + DateTime.Now.Day + "/" + DateTime.Now.Month + "/" + DateTime.Now.Year;
+            this.toolStripStatusLabel1.Text = "MenuPrincipal.cs" + " | " + "Usuario: " + ModuloAplicacion.SubmoduloPresentacion.Formularios.Presentacion.xNombreUsuarioSesion.Trim() + " - Fecha: " + DateTime.Now.Day + "/" + DateTime.Now.Month + "/" + DateTime.Now.Year;
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            ModuloAplicacion.SubmoduloDB.Formularios.RH formRH = new ModuloAplicacion.SubmoduloDB.Formularios.RH();
+            formRH.ShowDialog();
         }
         /*..................Funciones...............................*/
     }

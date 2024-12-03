@@ -9,7 +9,6 @@ D:\Documents\Documentos\Materias\Tópico Selecto de Sistemas de Información\ERP
 D:\Documents\Documentos\Materias\Tópico Selecto de Sistemas de Información\ERP\ERP-System\ERP-System\obj\Debug\ERP_System.Properties.Resources.resources
 D:\Documents\Documentos\Materias\Tópico Selecto de Sistemas de Información\ERP\ERP-System\ERP-System\obj\Debug\ERP-System.csproj.GenerateResource.cache
 D:\Documents\Documentos\Materias\Tópico Selecto de Sistemas de Información\ERP\ERP-System\ERP-System\obj\Debug\ERP-System.csproj.CoreCompileInputs.cache
-D:\Documents\Documentos\Materias\Tópico Selecto de Sistemas de Información\ERP\ERP-System\ERP-System\obj\Debug\ERP-System.csproj.Up2Date
 D:\Documents\Documentos\Materias\Tópico Selecto de Sistemas de Información\ERP\ERP-System\ERP-System\obj\Debug\ERP-System.exe
 D:\Documents\Documentos\Materias\Tópico Selecto de Sistemas de Información\ERP\ERP-System\ERP-System\obj\Debug\ERP-System.pdb
 D:\Documents\Documentos\Materias\Tópico Selecto de Sistemas de Información\ERP\ERP-System\ERP-System\obj\Debug\ModuloAplicacion.SubmoduloPresentacion.Formularios.Presentacion.resources
@@ -17,3 +16,4 @@ D:\Documents\Documentos\Materias\Tópico Selecto de Sistemas de Información\ERP
 D:\Documents\Documentos\Materias\Tópico Selecto de Sistemas de Información\ERP\ERP-System\ERP-System\obj\Debug\ModuloAplicacion.SubmoduloControlConexion.Formulario.ControlConexion.resources
 D:\Documents\Documentos\Materias\Tópico Selecto de Sistemas de Información\ERP\ERP-System\ERP-System\obj\Debug\ModuloAplicacion.SubmoduloAccesoSistema.Formularios.AccesoSistema.resources
 D:\Documents\Documentos\Materias\Tópico Selecto de Sistemas de Información\ERP\ERP-System\ERP-System\obj\Debug\ModuloAplicacion.SubmoduloMenuPrincipal.Formularios.MenuPrincipal.resources
+D:\Documents\Documentos\Materias\Tópico Selecto de Sistemas de Información\ERP\ERP-System\ERP-System\obj\Debug\ERP-System.csproj.CopyComplete

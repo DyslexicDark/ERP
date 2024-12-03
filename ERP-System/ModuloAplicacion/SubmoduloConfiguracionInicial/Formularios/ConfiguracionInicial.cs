@@ -48,10 +48,10 @@ namespace ModuloAplicacion.SubmoduloConfiguracionInicial.Formularios
                             }
                             try
                             {
-                                crearArchivoConfiguracionInicial(this.textBox1.Text.Trim(), Convert.ToInt32(this.textBox3.Text.Trim()), xTipo, this.textBox2.Text.Trim());
+                                crearArchivoConfiguracionInicial(this.textBox2.Text.Trim(), Convert.ToInt32(this.textBox3.Text.Trim()), xTipo, this.textBox1.Text.Trim());
                                 if (File.Exists(ModuloAplicacion.SubmoduloPresentacion.Formularios.Presentacion.xPath.Trim() + ModuloAplicacion.SubmoduloPresentacion.Formularios.Presentacion.xNombreArchivoConfiguracion.Trim()) == true)
                                 {
-                                    MessageBox.Show(ModuloAplicacion.SubmoduloConfiguracionInicial.Accesorios.Errores.cuerpoMensajesErrores("ci6"), ModuloAplicacion.SubmoduloConfiguracionInicial.Accesorios.Errores.cabeceraMensajesErrores());
+                                    this.listBox1.Items.Insert(0, "El archivo de configuracion inicial se ha creado correctamente.(ci6)...... espere....");
                                     this.button6.Enabled = true;
                                     this.button6.Focus();
                                     this.button5.Enabled = false;
@@ -112,6 +112,7 @@ namespace ModuloAplicacion.SubmoduloConfiguracionInicial.Formularios
         {
             if (xContador==1)
             {
+                this.listBox1.Items.Clear();
                 instaladorDB();
                 cargaBarra();
             }
@@ -119,7 +120,7 @@ namespace ModuloAplicacion.SubmoduloConfiguracionInicial.Formularios
             {
                 this.timer1.Stop();
                 this.timer1.Dispose();
-                MessageBox.Show("Final de los procesos...");
+                MessageBox.Show(ModuloAplicacion.SubmoduloConfiguracionInicial.Accesorios.Errores.cuerpoMensajesErrores("ci10"), ModuloAplicacion.SubmoduloConfiguracionInicial.Accesorios.Errores.cabeceraMensajesErrores());
                 this.button5.Enabled = true;
             }
             xContador++;
@@ -166,17 +167,32 @@ namespace ModuloAplicacion.SubmoduloConfiguracionInicial.Formularios
             else if (xRespuesta == "no")
             {
                 //La base no fue creada, no conocemos el error
-                this.listBox1.Items.Insert(0, "Base DB OFERCOM...................fallo");
+                this.listBox1.Items.Insert(0, "Base DB OFERCOM...................error(db6)");
             }
-            else if (xRespuesta == "")
+            else if (xRespuesta == "db1")
             {
                 //Controlamos el error del primer try/catch
-                this.listBox1.Items.Insert(0, "Base DB OFERCOM...................fallo");
+                this.listBox1.Items.Insert(0, "Base DB OFERCOM...................error(db1)");
             }
-            else if (xRespuesta == "")
+            else if (xRespuesta == "db2")
             {
                 //Controlamos el error del segundo try/catch
-                this.listBox1.Items.Insert(0, "Base DB OFERCOM...................fallo");
+                this.listBox1.Items.Insert(0, "Base DB OFERCOM...................error(db2)");
+            }
+            else if (xRespuesta == "db3")
+            {
+                //Controlamos el error del primer try/catch
+                this.listBox1.Items.Insert(0, "Base DB OFERCOM...................error(db3)");
+            }
+            else if (xRespuesta == "db4")
+            {
+                //Controlamos el error del segundo try/catch
+                this.listBox1.Items.Insert(0, "Base DB OFERCOM...................error(db4)");
+            }
+            else if (xRespuesta == "db5")
+            {
+                //Controlamos el error del segundo try/catch
+                this.listBox1.Items.Insert(0, "Base DB OFERCOM...................error(db5)");
             }
         }
     }

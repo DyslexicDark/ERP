@@ -45,6 +45,9 @@ namespace ModuloAplicacion.SubmoduloConfiguracionInicial.Accesorios
                 case "ci9":
                     xRespuesta = "Existe un error desconocido generado al momento de crear el archivo de configuración.(ci9)";
                     break;
+                case "ci10":
+                    xRespuesta = "El conjunto de procesos de instalacion de bases y tablas finalizo correctamente!!!.(ci10)";
+                    break;
             }
             return xRespuesta;
         }

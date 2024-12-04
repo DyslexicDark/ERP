@@ -36,6 +36,12 @@ namespace ModuloAplicacion.SubmoduloDB.Accesorios
                 case "db6":
                     xRespuesta = "Se produjo un error desconocido.(db6)";
                     break;
+                case "db7":
+                    xRespuesta = "La tabla de datos ya existe. Tambien puede haber un error en la sentencia sql.(db7)";
+                    break;
+                case "db8":
+                    xRespuesta = "Se produjo un error desconocido.(db8)";
+                    break;
             }
             return xRespuesta;
         }

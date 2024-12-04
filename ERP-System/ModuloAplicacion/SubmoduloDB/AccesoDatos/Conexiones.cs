@@ -29,9 +29,9 @@ namespace ModuloAplicacion.SubmoduloDB.AccesoDatos
         }
         public static NpgsqlConnection ConexionDB()
         {
-            string xConexion = "server=" + ModuloAplicacion.SubmoduloPresentacion.Formularios.Presentacion.xIpServidor.Trim() +
+            string xConexion =  "server=" + ModuloAplicacion.SubmoduloPresentacion.Formularios.Presentacion.xIpServidor.Trim() +
                                 ";port=" + ModuloAplicacion.SubmoduloPresentacion.Formularios.Presentacion.xPuertoServidor +
-                                ";database=DB_OFERCOM;user id=" + ModuloAplicacion.SubmoduloPresentacion.Formularios.Presentacion.xNombreUsuarioServidor.Trim() +
+                                ";database=db_ofercom;user id=" + ModuloAplicacion.SubmoduloPresentacion.Formularios.Presentacion.xNombreUsuarioServidor.Trim() +
                                 ";password=" + ModuloAplicacion.SubmoduloPresentacion.Formularios.Presentacion.xClaveUsuarioServidor.Trim();
             try
             {

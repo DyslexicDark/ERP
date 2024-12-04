@@ -116,7 +116,12 @@ namespace ModuloAplicacion.SubmoduloConfiguracionInicial.Formularios
                 instaladorDB();
                 cargaBarra();
             }
-            if (xContador==2)
+            if (xContador == 2)
+            {
+                instaladorTablaRH();
+                cargaBarra();
+            }
+            if (xContador == 3)
             {
                 this.timer1.Stop();
                 this.timer1.Dispose();
@@ -129,7 +134,7 @@ namespace ModuloAplicacion.SubmoduloConfiguracionInicial.Formularios
         private void cargaBarra()
         {
             this.progressBar1.Minimum = 0;
-            this.progressBar1.Maximum = 1;
+            this.progressBar1.Maximum = 2;
             this.progressBar1.Step = 1;
             this.progressBar1.PerformStep();
         }
@@ -193,6 +198,40 @@ namespace ModuloAplicacion.SubmoduloConfiguracionInicial.Formularios
             {
                 //Controlamos el error del segundo try/catch
                 this.listBox1.Items.Insert(0, "Base DB OFERCOM...................error(db5)");
+            }
+        }
+        private void instaladorTablaRH()
+        {
+            string xRespuesta = ModuloAplicacion.SubmoduloDB.AccesoDatos.AccesoDatosRH.instaladorTBRH();
+            if (xRespuesta == "si")
+            {
+                //La tabla fue creada correctamente
+                this.listBox1.Items.Insert(0, "Base DB OFERCOM | tb_RH...................ok");
+            }
+            else if (xRespuesta == "no")
+            {
+                //La tabla no fue creada, no conocemos el error
+                this.listBox1.Items.Insert(0, "Base DB OFERCOM | tb_RH...................error(db6)");
+            }
+            else if (xRespuesta == "db7")
+            {
+                this.listBox1.Items.Insert(0, "Base DB OFERCOM | tb_RH...................error(db7)");
+            }
+            else if (xRespuesta == "db8")
+            {
+                this.listBox1.Items.Insert(0, "Base DB OFERCOM | tb_RH...................error(db8)");
+            }
+            else if (xRespuesta == "db3")
+            {
+                this.listBox1.Items.Insert(0, "Base DB OFERCOM | tb_RH...................error(db3)");
+            }
+            else if (xRespuesta == "db4")
+            {
+                this.listBox1.Items.Insert(0, "Base DB OFERCOM | tb_RH...................error(db4)");
+            }
+            else if (xRespuesta == "db5")
+            {
+                this.listBox1.Items.Insert(0, "Base DB OFERCOM | tb_RH...................error(db5)");
             }
         }
     }

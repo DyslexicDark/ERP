@@ -19,7 +19,7 @@ namespace ModuloAplicacion.SubmoduloControlConexion.Accesorios
             switch (xCodigoError)
             {
                 case "cc1":
-                    xRespuesta = "Se produjo un error al intentar conectarse con una  varias bases de datos.(cc1)";
+                    xRespuesta = "Se produjo un error al intentar conectarse con una o varias bases de datos.(cc1)";
                     break;
                 case "cc2":
                     xRespuesta = ".(cc1)";

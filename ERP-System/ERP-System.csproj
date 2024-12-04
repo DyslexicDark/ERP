@@ -49,6 +49,33 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="ModuloAplicacion\SubmoduloControlConexion\Accesorios\Errores.cs" />
+    <Compile Include="ModuloAplicacion\SubmoduloDB\AccesoDatos\AccesoDatosCategorias.cs" />
+    <Compile Include="ModuloAplicacion\SubmoduloDB\AccesoDatos\AccesoDatosClientes.cs" />
+    <Compile Include="ModuloAplicacion\SubmoduloDB\AccesoDatos\AccesoDatosCompras.cs" />
+    <Compile Include="ModuloAplicacion\SubmoduloDB\AccesoDatos\AccesoDatosDetalleCompra.cs" />
+    <Compile Include="ModuloAplicacion\SubmoduloDB\AccesoDatos\AccesoDatosDetalleVenta.cs" />
+    <Compile Include="ModuloAplicacion\SubmoduloDB\AccesoDatos\AccesoDatosEstadisticasMarketing.cs" />
+    <Compile Include="ModuloAplicacion\SubmoduloDB\AccesoDatos\AccesoDatosEstrategiaMarketing.cs" />
+    <Compile Include="ModuloAplicacion\SubmoduloDB\AccesoDatos\AccesoDatosProductos.cs" />
+    <Compile Include="ModuloAplicacion\SubmoduloDB\AccesoDatos\AccesoDatosProveedres.cs" />
+    <Compile Include="ModuloAplicacion\SubmoduloDB\AccesoDatos\AccesoDatosRH.cs" />
+    <Compile Include="ModuloAplicacion\SubmoduloDB\AccesoDatos\AccesoDatosUbicaciones.cs" />
+    <Compile Include="ModuloAplicacion\SubmoduloDB\AccesoDatos\AccesoDatosEmpleados.cs" />
+    <Compile Include="ModuloAplicacion\SubmoduloDB\AccesoDatos\AccesoDatosVentas.cs" />
+    <Compile Include="ModuloAplicacion\SubmoduloDB\ERP\ErpCategorias.cs" />
+    <Compile Include="ModuloAplicacion\SubmoduloDB\ERP\ErpClientes.cs" />
+    <Compile Include="ModuloAplicacion\SubmoduloDB\ERP\ErpCompras.cs" />
+    <Compile Include="ModuloAplicacion\SubmoduloDB\ERP\ErpDetallesVenta.cs" />
+    <Compile Include="ModuloAplicacion\SubmoduloDB\ERP\ErpEmpleados.cs" />
+    <Compile Include="ModuloAplicacion\SubmoduloDB\ERP\ErpEstadisticasMarketing.cs" />
+    <Compile Include="ModuloAplicacion\SubmoduloDB\ERP\ErpEstrategiasMarketing.cs" />
+    <Compile Include="ModuloAplicacion\SubmoduloDB\ERP\ErpProductos.cs" />
+    <Compile Include="ModuloAplicacion\SubmoduloDB\ERP\ErpProveedores.cs" />
+    <Compile Include="ModuloAplicacion\SubmoduloDB\ERP\ErpRH.cs" />
+    <Compile Include="ModuloAplicacion\SubmoduloDB\ERP\ErpUbicaciones.cs" />
+    <Compile Include="ModuloAplicacion\SubmoduloDB\AccesoDatos\AccesoDatosUsuarios.cs" />
+    <Compile Include="ModuloAplicacion\SubmoduloDB\ERP\ErpVentas.cs" />
     <Compile Include="ModuloAplicacion\SubmoduloDB\AccesoDatos\AccesoDB.cs" />
     <Compile Include="ModuloAplicacion\SubmoduloAccesoSistema\Accesorios\Errores.cs" />
     <Compile Include="ModuloAplicacion\SubmoduloAccesoSistema\Formularios\AccesoSistema.cs">
@@ -70,7 +97,46 @@
     <Compile Include="ModuloAplicacion\SubmoduloControlConexion\Formulario\ControlConexion.Designer.cs">
       <DependentUpon>ControlConexion.cs</DependentUpon>
     </Compile>
+    <Compile Include="ModuloAplicacion\SubmoduloDB\ERP\ErpDetallesCompra.cs" />
     <Compile Include="ModuloAplicacion\SubmoduloDB\AccesoDatos\Conexiones.cs" />
+    <Compile Include="ModuloAplicacion\SubmoduloDB\Accesorios\Errores.cs" />
+    <Compile Include="ModuloAplicacion\SubmoduloDB\ERP\ErpUsuarios.cs" />
+    <Compile Include="ModuloAplicacion\SubmoduloDB\Formularios\Compras.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ModuloAplicacion\SubmoduloDB\Formularios\Compras.Designer.cs">
+      <DependentUpon>Compras.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ModuloAplicacion\SubmoduloDB\Formularios\Configuracion.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ModuloAplicacion\SubmoduloDB\Formularios\Configuracion.Designer.cs">
+      <DependentUpon>Configuracion.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ModuloAplicacion\SubmoduloDB\Formularios\Marketing.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ModuloAplicacion\SubmoduloDB\Formularios\Marketing.Designer.cs">
+      <DependentUpon>Marketing.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ModuloAplicacion\SubmoduloDB\Formularios\Productos.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ModuloAplicacion\SubmoduloDB\Formularios\Productos.Designer.cs">
+      <DependentUpon>Productos.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ModuloAplicacion\SubmoduloDB\Formularios\RH.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ModuloAplicacion\SubmoduloDB\Formularios\RH.Designer.cs">
+      <DependentUpon>RH.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ModuloAplicacion\SubmoduloDB\Formularios\Ventas.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ModuloAplicacion\SubmoduloDB\Formularios\Ventas.Designer.cs">
+      <DependentUpon>Ventas.cs</DependentUpon>
+    </Compile>
     <Compile Include="ModuloAplicacion\SubmoduloMenuPrincipal\Formularios\MenuPrincipal.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -93,6 +159,24 @@
     </EmbeddedResource>
     <EmbeddedResource Include="ModuloAplicacion\SubmoduloControlConexion\Formulario\ControlConexion.resx">
       <DependentUpon>ControlConexion.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ModuloAplicacion\SubmoduloDB\Formularios\Compras.resx">
+      <DependentUpon>Compras.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ModuloAplicacion\SubmoduloDB\Formularios\Configuracion.resx">
+      <DependentUpon>Configuracion.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ModuloAplicacion\SubmoduloDB\Formularios\Marketing.resx">
+      <DependentUpon>Marketing.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ModuloAplicacion\SubmoduloDB\Formularios\Productos.resx">
+      <DependentUpon>Productos.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ModuloAplicacion\SubmoduloDB\Formularios\RH.resx">
+      <DependentUpon>RH.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ModuloAplicacion\SubmoduloDB\Formularios\Ventas.resx">
+      <DependentUpon>Ventas.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="ModuloAplicacion\SubmoduloMenuPrincipal\Formularios\MenuPrincipal.resx">
       <DependentUpon>MenuPrincipal.cs</DependentUpon>
@@ -125,25 +209,6 @@
   <ItemGroup>
     <WCFMetadata Include="Connected Services\" />
   </ItemGroup>
-  <ItemGroup>
-    <Folder Include="ModuloAplicacion\ModuloCompras\SubmoduloCompras\" />
-    <Folder Include="ModuloAplicacion\ModuloCompras\SubmoduloProveedores\" />
-    <Folder Include="ModuloAplicacion\ModuloCompras\SubmoduloReportesCompras\" />
-    <Folder Include="ModuloAplicacion\ModuloConfiguracion\SubmoduloBackup\" />
-    <Folder Include="ModuloAplicacion\ModuloConfiguracion\SubmoduloConfiguracionGeneral\" />
-    <Folder Include="ModuloAplicacion\ModuloMarketing\SubmoduloEstadisticas\" />
-    <Folder Include="ModuloAplicacion\ModuloMarketing\SubmoduloEstrategias\" />
-    <Folder Include="ModuloAplicacion\ModuloProductos\SubmoduloCategorias\" />
-    <Folder Include="ModuloAplicacion\ModuloProductos\SubmoduloInventarios\" />
-    <Folder Include="ModuloAplicacion\ModuloProductos\SubmoduloProductos\" />
-    <Folder Include="ModuloAplicacion\ModuloRH\SubmoduloAsistencia\" />
-    <Folder Include="ModuloAplicacion\ModuloRH\SubmoduloEmpleados\" />
-    <Folder Include="ModuloAplicacion\ModuloRH\SubmoduloNomina\" />
-    <Folder Include="ModuloAplicacion\ModuloUsuarios\SubmoduloPermisos\" />
-    <Folder Include="ModuloAplicacion\ModuloUsuarios\SubmoduloUsuarios\" />
-    <Folder Include="ModuloAplicacion\ModuloVentas\SubmoduloClientes\" />
-    <Folder Include="ModuloAplicacion\ModuloVentas\SubmoduloReportesVentas\" />
-    <Folder Include="ModuloAplicacion\ModuloVentas\SubmoduloVentas\" />
-  </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

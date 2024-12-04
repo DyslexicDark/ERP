@@ -16,4 +16,10 @@ D:\Documents\Documentos\Materias\Tópico Selecto de Sistemas de Información\ERP
 D:\Documents\Documentos\Materias\Tópico Selecto de Sistemas de Información\ERP\ERP-System\ERP-System\obj\Debug\ModuloAplicacion.SubmoduloControlConexion.Formulario.ControlConexion.resources
 D:\Documents\Documentos\Materias\Tópico Selecto de Sistemas de Información\ERP\ERP-System\ERP-System\obj\Debug\ModuloAplicacion.SubmoduloAccesoSistema.Formularios.AccesoSistema.resources
 D:\Documents\Documentos\Materias\Tópico Selecto de Sistemas de Información\ERP\ERP-System\ERP-System\obj\Debug\ModuloAplicacion.SubmoduloMenuPrincipal.Formularios.MenuPrincipal.resources
-D:\Documents\Documentos\Materias\Tópico Selecto de Sistemas de Información\ERP\ERP-System\ERP-System\obj\Debug\ERP-System.csproj.CopyComplete
+D:\Documents\Documentos\Materias\Tópico Selecto de Sistemas de Información\ERP\ERP-System\ERP-System\obj\Debug\ModuloAplicacion.SubmoduloDB.Formularios.Compras.resources
+D:\Documents\Documentos\Materias\Tópico Selecto de Sistemas de Información\ERP\ERP-System\ERP-System\obj\Debug\ModuloAplicacion.SubmoduloDB.Formularios.Configuracion.resources
+D:\Documents\Documentos\Materias\Tópico Selecto de Sistemas de Información\ERP\ERP-System\ERP-System\obj\Debug\ModuloAplicacion.SubmoduloDB.Formularios.Marketing.resources
+D:\Documents\Documentos\Materias\Tópico Selecto de Sistemas de Información\ERP\ERP-System\ERP-System\obj\Debug\ModuloAplicacion.SubmoduloDB.Formularios.Productos.resources
+D:\Documents\Documentos\Materias\Tópico Selecto de Sistemas de Información\ERP\ERP-System\ERP-System\obj\Debug\ModuloAplicacion.SubmoduloDB.Formularios.RH.resources
+D:\Documents\Documentos\Materias\Tópico Selecto de Sistemas de Información\ERP\ERP-System\ERP-System\obj\Debug\ModuloAplicacion.SubmoduloDB.Formularios.Ventas.resources
+D:\Documents\Documentos\Materias\Tópico Selecto de Sistemas de Información\ERP\ERP-System\ERP-System\obj\Debug\ERP-System.csproj.Up2Date
